@@ -1,0 +1,121 @@
+/* GENERALES */
+*{
+	margin:0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: $fuentes;
+	background-color: $fondo;
+	color: black;
+	text-align: center;
+}
+
+
+
+
+.texto {
+	p {
+		font-size: 18px;
+		padding: $padding;
+	}
+}
+
+.texto {
+	h2 {
+		font-size: 40px;
+		text-align: center;
+		padding: $padding;
+	}
+}
+
+.texto {
+	h3 {
+		padding: $padding;	
+	}
+}
+
+.texto {
+    h1 {
+        padding: 50px 50px;
+    }
+}
+
+.bg-black{
+	background-color: #1d3557ff;
+	color: white!important;
+}
+
+
+
+
+
+
+/*HEADER*/
+header {
+	color: #1d3557ff;
+
+}
+
+.navbar a, .nav-link{
+	color: #f1faeeff!important;
+	text-decoration: none;
+}
+
+
+/*WHATAPP*/
+.icono {
+	margin: 0 0;
+	overflow: hidden;
+	position: fixed;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background: #0df053;
+	color: #fff;
+	border-radius: 70px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3)
+	
+}
+
+/*FOOTER*/
+
+footer {
+	height: 150px;
+	max-height: 150px;
+	background: #1d3557ff;
+	}
+.nav-link{
+	color: #f1faeeff;
+	text-decoration: none;
+}
+
+.containerCar2{
+    margin: 20px 20px;
+}
+
+
+
+
+/*SERVICIOS*/
+.containerTexto{
+	height: 400px;
+}
+
+  /*TEXTO SERVICIOS*/
+  .containerTexto{
+	height: auto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px, 20px, 20px, 20px;
+
+  }
+  .servicioTexto{
+	padding: 20px;
+  }
