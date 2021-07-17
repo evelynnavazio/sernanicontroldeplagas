@@ -11,8 +11,8 @@
 
 .imgBodyDos {
   background-image: url("../media/14.jpg");
-  height: 500px;
-  max-height: 500px;
+  height: 1000x;
+  max-height: 1000px;
   display: inline-block;
   width: 100%;
   margin-top: 100px;
@@ -61,7 +61,7 @@
 }
 
 .contenedorEmpresa::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -76,10 +76,8 @@
 
 .contenedorcitoEmpresa {
   max-width: 850px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -109,7 +107,7 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -141,7 +139,7 @@ h2::after {
 }
 
 .containerForm::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -156,10 +154,8 @@ h2::after {
 
 .contenedorcito {
   max-width: 1200px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -189,7 +185,7 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -209,8 +205,8 @@ h2::after {
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1rem;
   margin-bottom: 22px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .field:hover {
@@ -263,6 +259,10 @@ body {
   padding: 30px 30px;
 }
 
+.texto h1 {
+  padding: 50px 50px;
+}
+
 .texto h2 {
   font-size: 40px;
   text-align: center;
@@ -271,10 +271,6 @@ body {
 
 .texto h3 {
   padding: 30px 30px;
-}
-
-.texto h1 {
-  padding: 50px 50px;
 }
 
 .bg-black {
@@ -315,7 +311,7 @@ header {
 footer {
   height: 150px;
   max-height: 150px;
-  background: #1d3557ff;
+  background: #571d3f;
 }
 
 .nav-link {
@@ -360,5 +356,4 @@ footer {
 
 .principalBtn:hover {
   background-color: #27ae60;
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

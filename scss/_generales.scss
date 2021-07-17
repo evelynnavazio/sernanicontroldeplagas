@@ -12,14 +12,17 @@ body{
 	text-align: center;
 }
 
-
-
-
 .texto {
 	p {
 		font-size: 18px;
 		padding: $padding;
 	}
+}
+
+.texto {
+    h1 {
+        padding: 50px 50px;
+    }
 }
 
 .texto {
@@ -36,20 +39,10 @@ body{
 	}
 }
 
-.texto {
-    h1 {
-        padding: 50px 50px;
-    }
-}
-
 .bg-black{
 	background-color: #1d3557ff;
 	color: white!important;
 }
-
-
-
-
 
 
 /*HEADER*/
@@ -88,7 +81,7 @@ header {
 footer {
 	height: 150px;
 	max-height: 150px;
-	background: #1d3557ff;
+	background: rgb(87, 29, 63);
 	}
 .nav-link{
 	color: #f1faeeff;
