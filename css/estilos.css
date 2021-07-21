@@ -509,7 +509,7 @@ header {
   padding-top: 1rem;
 }
 
-/*WHATAPP*/
+/*WHATSAPP*/
 .icono {
   margin: 0 0;
   overflow: hidden;
@@ -635,21 +635,28 @@ ul {
   }
 }
 /*SERVICIOS*/
-.containerTexto {
-  height: 400px;
-}
-
-/*TEXTO SERVICIOS*/
-.containerTexto {
-  height: auto;
-  font-size: 18px;
-  letter-spacing: 1px;
+.contenedorServicios h1 {
   text-align: center;
-  padding: 20px, 20px, 20px, 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.servicioTexto {
-  padding: 20px;
+.contenedorServicios p {
+  text-align: center;
+  padding: 10px 50px 0 50px;
+  line-height: 22px;
+}
+
+.contenedorServicios h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Underline From Center */
