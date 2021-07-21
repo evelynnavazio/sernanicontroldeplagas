@@ -1,6 +1,6 @@
 
 /*IMAGEN DENGUE*/
-
+/*
 .contenedorImgBody{
 	width: 50%;
 	display: flex;
@@ -32,7 +32,7 @@
 	transition: all 400ms ease-out;
 	opacity: 0;
 	visibility: hidden;
-   text-align: center;
+    text-align: center;
 }
 .contenedorImgBody figure:hover > .capa {
 	opacity: 1;
@@ -60,6 +60,13 @@
 	max-width: 220px;
 	margin: auto;
 }
+*/
+/*CARRUSEL DEL BODY INDEX*/
+.carousel{
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
+}
+
+
 
 
 /*IMAGEN DOS DEL BODY*/
@@ -83,17 +90,12 @@
     background-attachment: fixed;
 }
 
-/*CARRUSEL*/
-.imgCarrusel{
-
-	background-size: cover;
-}
 
 
 
 
 
-/*NUESTRA EMPRESA*/
+/*PAGINA NUESTRA EMPRESA*/
 
 .contenedorEmpresa{
 	position: relative;
@@ -273,16 +275,6 @@ h2::after{
 }
 
 
-.imgBody2 {
-	background-image: url("../media/14.jpg");
-	height: 500px;
-	display: inline-block;
-	width: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	margin-bottom: 0;
-	padding: 0;
-}
 
 
 /*EN DENGUE*/
@@ -300,9 +292,6 @@ h2::after{
 	color: white;
 	position: absolute;
 	font-weight: 500;
-	top: 10px;
-	left: 10px;
-	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -311,4 +300,27 @@ h2::after{
 	width: 100%;
 }
 
+.boxDengue{
+	display: inline-block;
+	text-align: justify;
+	padding: 2% 5% 2% 5%;
+}
 
+.boxDengue h1{
+	text-align: center;
+}
+
+.boxDengue h2{
+	padding-top: 1rem;
+}
+
+
+.imgContactoIndex {
+	background-image: url("../media/14.jpg");
+	height: 500px;
+	display: inline-block;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
