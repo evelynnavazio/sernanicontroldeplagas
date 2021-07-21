@@ -1,21 +1,72 @@
 
-/*IMAGEN 1 DE PAGINA DE INICIO*/
+/*IMAGEN DENGUE*/
 
-
-.imgBody {
-	background-image: url("../media/13.jpg");
+.contenedorImgBody{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.contenedorImgBody figure{
+   position:relative;
 	height: 500px;
-	display: inline-block;
+	cursor: pointer;
 	width: 100%;
-	background-size: cover;
-	background-attachment: fixed;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.contenedorImgBody figure img{
+	width: 100%;
+	height: 100%;
+	transition: all 400ms ease-out;
+	will-change: transform;
+}
+.contenedorImgBody figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(70, 129, 141, 0.7);
+	transition: all 400ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+   text-align: center;
+}
+.contenedorImgBody figure:hover > .capa {
+	opacity: 1;
+	visibility: visible;
+}
+.contenedorImgBody figure:hover > .capa h3{
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+.contenedorImgBody figure:hover > img{
+	transform: scale(1.3);
+}
+.contenedorImgBody figure .capa h3{
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	 margin-top: 30px;
+}
+.contenedorImgBody figure .capa p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 }
 
+
+/*IMAGEN DOS DEL BODY*/
 .imgBodyDos {
 	background-image: url("../media/14.jpg");
 	height: 1000x;
 	max-height: 1000px;
-	display: inline-block;
 	width: 100%;
 	margin-top: 100px;
 	background-size: cover;
@@ -37,13 +88,9 @@
 
 	background-size: cover;
 }
-/*CARD INDEX IMAGENES*/
 
-.carImg{
-	max-height: 50%;
-	background-size: cover;
 
-}
+
 
 
 /*NUESTRA EMPRESA*/
@@ -233,10 +280,35 @@ h2::after{
 	width: 100%;
 	background-size: cover;
 	background-attachment: fixed;
-	margin-top: 50px;
 	margin-bottom: 0;
 	padding: 0;
 }
 
+
+/*EN DENGUE*/
+
+
+
+.contenedorDengue{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.textoEncima{
+	width: 100%;
+	color: white;
+	position: absolute;
+	font-weight: 500;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.mosco{
+	width: 100%;
+}
 
 

@@ -1,19 +1,89 @@
-@import url("https://fonts.googleapis.com/css2? family = Festive & family = Zen + Loop: ital @ 0; 1 & display = swap");
-/*IMAGEN 1 DE PAGINA DE INICIO*/
-.imgBody {
-  background-image: url("../media/13.jpg");
-  height: 500px;
-  display: inline-block;
-  width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300;1,400;1,500&display=swap");
+/*IMAGEN DENGUE*/
+.contenedorImgBody {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
+.contenedorImgBody figure {
+  position: relative;
+  height: 500px;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorImgBody figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedorImgBody figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 129, 141, 0.7);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedorImgBody figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedorImgBody figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.contenedorImgBody figure:hover > img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.contenedorImgBody figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedorImgBody figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/*IMAGEN DOS DEL BODY*/
 .imgBodyDos {
   background-image: url("../media/14.jpg");
   height: 1000x;
   max-height: 1000px;
-  display: inline-block;
   width: 100%;
   margin-top: 100px;
   background-size: cover;
@@ -32,12 +102,6 @@
 
 /*CARRUSEL*/
 .imgCarrusel {
-  background-size: cover;
-}
-
-/*CARD INDEX IMAGENES*/
-.carImg {
-  max-height: 50%;
   background-size: cover;
 }
 
@@ -246,9 +310,34 @@ h2::after {
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 50px;
   margin-bottom: 0;
   padding: 0;
+}
+
+/*EN DENGUE*/
+.contenedorDengue {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.textoEncima {
+  width: 100%;
+  color: white;
+  position: absolute;
+  font-weight: 500;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mosco {
+  width: 100%;
 }
 
 /* GENERALES */
@@ -260,38 +349,13 @@ h2::after {
 }
 
 body {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Poppins", sans-serif;
   background-color: #e1e5ea;
   color: black;
   width: 100%;
   height: 100%;
   letter-spacing: 0.03em;
   line-height: 1.6;
-}
-
-/*TEXTO BODY HOME*/
-.texto p {
-  font-size: 18px;
-  padding: 30px 30px;
-}
-
-.texto h1 {
-  padding: 50px 50px;
-}
-
-.texto h2 {
-  font-size: 40px;
-  text-align: center;
-  padding: 30px 30px;
-}
-
-.texto h3 {
-  padding: 30px 30px;
-}
-
-.bg-black {
-  background-color: #1d3557ff;
-  color: white !important;
 }
 
 /*HEADER*/
@@ -304,20 +368,43 @@ header {
   text-decoration: none;
 }
 
-/*CARD BODY INDEX*/
-.title {
-  text-align: center;
-  font-size: 40px;
-  color: #6a6a6a;
-  margin-top: 100px;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
+.bg-black {
+  background-color: #1d3557ff;
+  color: white !important;
 }
 
+/*TEXTO BODY HOME*/
+.textContenedor {
+  height: 150px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  --animate-duration: 3s;
+  --animate-delay: 0.9s;
+}
+
+.textContenedor .text:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+}
+
+/*CARD BODY INDEX*/
 .containerCar {
   width: 100%;
   max-width: 1200px;
-  height: 430px;
+  height: 500px;
+  padding: 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +418,7 @@ header {
 
 .containerCar .card {
   width: 330px;
-  height: 430px;
+  height: 380px;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -367,7 +454,59 @@ header {
 .containerCar .card a {
   font-weight: 500;
   text-decoration: none;
-  color: #3498db;
+  color: #03090e;
+}
+
+/*SOBRE NUESTRA EMPRESA*/
+.barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1d3557ff;
+  width: auto;
+  height: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.indexEmpresa {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 550px;
+  padding-bottom: 30px;
+}
+
+.indexEmpresa1 h2 {
+  margin: 40px 30px 20px 100px;
+}
+
+.indexEmpresa1 {
+  width: 40%;
+  margin-left: 40px;
+}
+
+.indexEmpresa2 {
+  width: 60%;
+  margin: 1rem;
+  padding: 1rem 1rem;
+}
+
+.cajaEmpresa {
+  padding-top: 1rem;
 }
 
 /*WHATAPP*/
@@ -513,19 +652,36 @@ ul {
   padding: 20px;
 }
 
+/* Underline From Center */
 .principalBtn {
-  width: 50%;
-  background-color: #1d3557ff;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-decoration: none;
-  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
 
-.principalBtn:hover {
-  background-color: #27ae60;
+.principalBtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #27ae60;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
+  left: 0;
+  right: 0;
 }/*# sourceMappingURL=estilos.css.map */
