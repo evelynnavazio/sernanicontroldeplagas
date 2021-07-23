@@ -19,15 +19,22 @@ body{
 /*HEADER*/
 header {
 	color: #1d3557ff;
+	width: auto;
 
 }
 .navbar a, .nav-link{
 	color: #f1faeeff!important;
 	text-decoration: none;
 }
+.nav-item .nav-link{
+	margin: 0.1rem;
+}
 .bg-black{
 	background-color: #1d3557ff;
 	color: white!important;
+}
+.logo{
+	width: 200px;
 }
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/

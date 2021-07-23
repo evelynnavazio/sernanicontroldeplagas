@@ -67,25 +67,13 @@
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
 
-/*IMAGEN DOS DEL BODY*/
-.imgBodyDos {
+.imgContactoIndex {
   background-image: url("../media/14.jpg");
-  height: 1000x;
-  max-height: 1000px;
-  width: 100%;
-  margin-top: 100px;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0 0;
-  padding: 0 0;
-}
-
-.img3 {
-  height: 300px;
   display: inline-block;
-  width: 70%;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
+  height: 450px;
 }
 
 /*PAGINA NUESTRA EMPRESA*/
@@ -323,15 +311,6 @@ h2::after {
   padding-top: 1rem;
 }
 
-.imgContactoIndex {
-  background-image: url("../media/14.jpg");
-  height: 500px;
-  display: inline-block;
-  width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 /* GENERALES */
 * {
   margin: 0px;
@@ -353,6 +332,7 @@ body {
 /*HEADER*/
 header {
   color: #1d3557ff;
+  width: auto;
 }
 
 .navbar a, .nav-link {
@@ -360,9 +340,17 @@ header {
   text-decoration: none;
 }
 
+.nav-item .nav-link {
+  margin: 0.1rem;
+}
+
 .bg-black {
   background-color: #1d3557ff;
   color: white !important;
+}
+
+.logo {
+  width: 200px;
 }
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
