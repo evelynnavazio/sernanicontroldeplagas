@@ -1,79 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300;1,400;1,500&display=swap");
 /*IMAGEN DENGUE*/
-/*
-.contenedorImgBody{
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
-.contenedorImgBody figure{
-   position:relative;
-	height: 500px;
-	cursor: pointer;
-	width: 100%;
-	overflow: hidden;
-	border-radius: 6px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-}
-.contenedorImgBody figure img{
-	width: 100%;
-	height: 100%;
-	transition: all 400ms ease-out;
-	will-change: transform;
-}
-.contenedorImgBody figure .capa{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(70, 129, 141, 0.7);
-	transition: all 400ms ease-out;
-	opacity: 0;
-	visibility: hidden;
-    text-align: center;
-}
-.contenedorImgBody figure:hover > .capa {
-	opacity: 1;
-	visibility: visible;
-}
-.contenedorImgBody figure:hover > .capa h3{
-	margin-top: 70px;
-	margin-bottom: 15px;
-}
-.contenedorImgBody figure:hover > img{
-	transform: scale(1.3);
-}
-.contenedorImgBody figure .capa h3{
-	color: #fff;
-	font-weight: 400;
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	 margin-top: 30px;
-}
-.contenedorImgBody figure .capa p{
-	color: #fff;
-	font-size: 15px;
-	line-height: 1.5;
-	width: 100%;
-	max-width: 220px;
-	margin: auto;
-}
-*/
-/*CARRUSEL DEL BODY INDEX*/
-.carousel {
-  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+.contenedorImgBody figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
 }
 
-.imgContactoIndex {
-  background-image: url("../media/14.jpg");
-  display: inline-block;
+.contenedorImgBody figure .capa {
+  position: absolute;
+  top: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(70, 129, 141, 0.7);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedorImgBody figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedorImgBody figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.contenedorImgBody figure:hover > img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.contenedorImgBody figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedorImgBody figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/*CAROUSEL DEL BODY INDEX*/
+.carousel {
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*IMAGEN ANTES DEL FOOTER INDEX*/
+.boxImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   background-size: cover;
   background-attachment: fixed;
-  height: 450px;
+}
+
+.imgF {
+  height: 70vh;
+  width: 100%;
+}
+
+.textF {
+  text-align: center;
+  position: absolute;
+}
+
+.textF, h1 p {
+  color: #FFF;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.textF p {
+  font-size: 22px;
 }
 
 /*PAGINA NUESTRA EMPRESA*/
@@ -109,7 +126,7 @@
           filter: blur(50px);
 }
 
-.contenedorcitoEmpresa {
+.contentEmpresa {
   max-width: 850px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -135,13 +152,13 @@
   padding: 25px 40px;
 }
 
-h2 {
+.tituloEmpresa {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
-h2::after {
+.tituloEmpresa::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -187,7 +204,7 @@ h2::after {
           filter: blur(50px);
 }
 
-.contenedorcito {
+.contentContacto {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -213,13 +230,13 @@ h2::after {
   padding: 25px 40px;
 }
 
-h2 {
+.tituloContacto {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
-h2::after {
+.tituloContacto::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -257,7 +274,7 @@ h2::after {
   min-height: 150px;
 }
 
-.btn {
+.btnContacto {
   width: 100%;
   padding: 0.5rem;
   font-size: 1.1rem;
@@ -270,7 +287,7 @@ h2::after {
   transition: 0.3s;
 }
 
-.btn:hover {
+.btnContacto:hover {
   background-color: #27ae60;
 }
 
@@ -309,6 +326,42 @@ h2::after {
 
 .boxDengue h2 {
   padding-top: 1rem;
+}
+
+/* Underline From Center */
+.principalBtn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.principalBtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #27ae60;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
+  left: 0;
+  right: 0;
 }
 
 /* GENERALES */
@@ -353,88 +406,21 @@ header {
   width: 200px;
 }
 
-/*SOBRE NUESTRA EMPRESA EN EL INDEX*/
-.saludo {
-  display: inline-block;
-  text-align: center;
-  padding: 1.5em 1em 0 2.5em;
-}
-
-.indexEmpresa {
-  background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  padding-bottom: 30px;
-  margin: 2% 2% 2% 0%;
-}
-
-.indexEmpresa1 h1 {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.indexEmpresa1 h2 {
-  margin-top: 10%;
-}
-
-.indexEmpresa1 {
-  width: 40%;
-  margin-left: 40px;
-}
-
-.indexEmpresa2 {
-  width: 60%;
-  margin: 1rem;
-  padding: 1rem 0.5rem;
-}
-
-.cajaEmpresa {
-  padding-top: 1rem;
-}
-
-.barra {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #1d3557ff;
+/*BOTONES EN INDEX*/
+.btnIndex {
   width: auto;
-  height: 40px;
-  margin-left: 25px;
-  margin-right: 25px;
+  background: #13a0a0;
+  color: black;
 }
 
-@media (max-width: 1300px) {
-  .indexEmpresa1 h2 {
-    margin: 40px 30px 20px 0px;
-  }
+.btnIndex:hover {
+  background: blanchedalmond;
+  color: blueviolet;
 }
-/*TEXTO BODY HOME*/
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 20px;
+
+/*SOBRE NUESTRA EMPRESA EN EL INDEX*/
+.certified {
+  width: 150px;
 }
 
 /*CARD INDEX*/
@@ -492,6 +478,19 @@ header {
   font-weight: 500;
   text-decoration: none;
   color: #03090e;
+}
+
+/*ABONOS*/
+.abonos {
+  height: 150px;
+  background: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.abonosTexto {
+  width: 400px;
+  text-align: center;
 }
 
 /*WHATSAPP*/
@@ -612,29 +611,33 @@ ul {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+    text-align: center;
   }
 }
 /*PAGINA SERVICIOS*/
 .contenedorServicios h1 {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+  font-weight: bold;
 }
 
 .contenedorServicios p {
   text-align: center;
-  padding: 10px 50px 0 50px;
+  padding: 0 8em 0 9em;
   line-height: 22px;
 }
 
 .contenedorServicios h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .container .card:hover {
@@ -644,38 +647,23 @@ ul {
           box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Underline From Center */
-.principalBtn {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
+.card-body {
+  height: 200px;
 }
 
-.principalBtn:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #27ae60;
-  height: 3px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+.card-img-top {
+  height: 255px;
 }
 
-.principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
-  left: 0;
-  right: 0;
+@media (max-width: 574px) {
+  .card-body {
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .card-body {
+    height: auto;
+    text-align: center;
+  }
 }/*# sourceMappingURL=estilos.css.map */
