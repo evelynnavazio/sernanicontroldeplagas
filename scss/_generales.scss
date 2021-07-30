@@ -12,6 +12,9 @@ body{
 	height: 100%;
 	letter-spacing: 0.03em;
 	line-height: 1.6;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
 }
 /*HEADER*/
 header {
@@ -33,38 +36,33 @@ header {
 	width: 200px;
 }
 
-/*BOTONES EN INDEX*/
-
-.btnIndex{
-	width: auto;
-	background: rgb(19, 160, 160);
-	color: black;
+/*CAROUSEL*/
+.carousel-caption{
+	background-color: rgba(0, 0, 0, 0.4);
 }
-.btnIndex:hover{
-	background: blanchedalmond;
-	color: blueviolet;
-}
-
-
-
-
-
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
 .certified{
 	width: 150px;
+	margin: 1em;
 }
-
-
-
-
-
-
-
-
-
-
-
+.textIndex{
+	text-align: center;
+	width: 700px;
+	margin: auto;
+}
+.textIndex p{
+	margin-bottom: 3em;
+}
+.sobreNosotros{
+	margin-left: 6em;
+}
+.nuestrosValores{
+	margin-bottom: 2em;
+}
+.nuestrosServicios{
+	margin: 2em;	
+}
 
 /*CARD INDEX*/
 
@@ -115,7 +113,14 @@ header {
     text-decoration: none;
     color: #03090e;
 }
-
+/*CONTACTO*/
+.tituloContacto{
+	margin: 1em;
+}
+.boton{
+	width: auto;
+	margin: 1.5em;
+}
 /*ABONOS*/
 .abonos{
 	height: 150px;
@@ -124,8 +129,7 @@ header {
 	font-weight: bold;
 }
 .abonosTexto{
-	width: 400px;
-	text-align: center;
+	width: auto;
 }
 
 
@@ -251,21 +255,17 @@ ul{
 
 
 /*PAGINA SERVICIOS*/
-.contenedorServicios h1{
-	text-align: center;
+.servicios h1{
 	padding-top: 1em;
 	padding-bottom: 0.8em;
-	font-weight: bold;
 }
 
-.contenedorServicios p{
-	text-align: center;
+.servicios p{
 	padding: 0 8em 0 9em;
 	line-height: 22px;
 }
 
-.contenedorServicios h2{
-	text-align: center;
+.servicios h2{
 	margin-bottom: 1.5em;
 	margin-top: 1.5em;
 }

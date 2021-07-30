@@ -1,6 +1,6 @@
 
 /*IMAGEN DENGUE*/
-
+/*
 .contenedorImgBody figure img{
 	width: 100%;
 	height: 100%;
@@ -44,7 +44,7 @@
 	max-width: 220px;
 	margin: auto;
 }
-
+*/
 /*CAROUSEL DEL BODY INDEX*/
 .carousel{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.30);	
@@ -58,7 +58,7 @@
 	background-size: cover;
 	background-attachment: fixed;
 }
-.imgF {
+.imgF{
 	height: 70vh;
 	width: 100%;	
 }
@@ -220,8 +220,9 @@
 	cursor: pointer;
 	outline: none;
 	border: none;
-	color: #fff;
+	color: #fff!important;
 	transition: 0.3s;
+	text-decoration: none;
 }
 .btnContacto:hover{
 	background-color: #27ae60;
@@ -229,48 +230,8 @@
 
 
 
-
-/*EN DENGUE*/
-
-
-
-.contenedorDengue{
-	width: 100%;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-.textoEncima{
-	width: 100%;
-	color: white;
-	position: absolute;
-	font-weight: 500;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.mosco{
-	width: 100%;
-}
-
-.boxDengue{
-	display: inline-block;
-	text-align: justify;
-	padding: 2% 5% 2% 5%;
-}
-
-.boxDengue h1{
-	text-align: center;
-}
-
-.boxDengue h2{
-	padding-top: 1rem;
-}
-
-
-
-
 /* Underline From Center */
+/*
 .principalBtn {
 	display: inline-block;
 	vertical-align: middle;
@@ -287,8 +248,8 @@
 	content: "";
 	position: absolute;
 	z-index: -1;
-	left: 51%;
-	right: 51%;
+	left: 50%;
+	right: 50%;
 	bottom: 0;
 	background: #27ae60;
 	height: 3px;
@@ -303,6 +264,6 @@
 	left: 0;
 	right: 0;
   }
-
+*/
 
 

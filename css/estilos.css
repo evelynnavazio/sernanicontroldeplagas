@@ -1,59 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300;1,400;1,500&display=swap");
 /*IMAGEN DENGUE*/
-.contenedorImgBody figure img {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
-  will-change: transform;
+/*
+.contenedorImgBody figure img{
+	width: 100%;
+	height: 100%;
+	transition: all 400ms ease-out;
+	will-change: transform;
 }
-
-.contenedorImgBody figure .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(70, 129, 141, 0.7);
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
+.contenedorImgBody figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(70, 129, 141, 0.7);
+	transition: all 400ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+    text-align: center;
 }
-
 .contenedorImgBody figure:hover > .capa {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
-
-.contenedorImgBody figure:hover > .capa h3 {
-  margin-top: 70px;
-  margin-bottom: 15px;
+.contenedorImgBody figure:hover > .capa h3{
+	margin-top: 70px;
+	margin-bottom: 15px;
 }
-
-.contenedorImgBody figure:hover > img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.contenedorImgBody figure:hover > img{
+	transform: scale(1.3);
 }
-
-.contenedorImgBody figure .capa h3 {
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 120px;
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
-  margin-top: 30px;
+.contenedorImgBody figure .capa h3{
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
 }
-
-.contenedorImgBody figure .capa p {
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.5;
-  width: 100%;
-  max-width: 220px;
-  margin: auto;
+.contenedorImgBody figure .capa p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 }
-
+*/
 /*CAROUSEL DEL BODY INDEX*/
 .carousel {
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
@@ -282,88 +273,51 @@
   cursor: pointer;
   outline: none;
   border: none;
-  color: #fff;
+  color: #fff !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .btnContacto:hover {
   background-color: #27ae60;
 }
 
-/*EN DENGUE*/
-.contenedorDengue {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
-.textoEncima {
-  width: 100%;
-  color: white;
-  position: absolute;
-  font-weight: 500;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.mosco {
-  width: 100%;
-}
-
-.boxDengue {
-  display: inline-block;
-  text-align: justify;
-  padding: 2% 5% 2% 5%;
-}
-
-.boxDengue h1 {
-  text-align: center;
-}
-
-.boxDengue h2 {
-  padding-top: 1rem;
-}
-
 /* Underline From Center */
+/*
 .principalBtn {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+  }
 
-.principalBtn:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #27ae60;
-  height: 3px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
-  left: 0;
-  right: 0;
-}
-
+  .principalBtn:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #27ae60;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
+	left: 0;
+	right: 0;
+  }
+*/
 /* GENERALES */
 * {
   margin: 0px;
@@ -380,6 +334,9 @@ body {
   height: 100%;
   letter-spacing: 0.03em;
   line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*HEADER*/
@@ -406,21 +363,37 @@ header {
   width: 200px;
 }
 
-/*BOTONES EN INDEX*/
-.btnIndex {
-  width: auto;
-  background: #13a0a0;
-  color: black;
-}
-
-.btnIndex:hover {
-  background: blanchedalmond;
-  color: blueviolet;
+/*CAROUSEL*/
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
 .certified {
   width: 150px;
+  margin: 1em;
+}
+
+.textIndex {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.textIndex p {
+  margin-bottom: 3em;
+}
+
+.sobreNosotros {
+  margin-left: 6em;
+}
+
+.nuestrosValores {
+  margin-bottom: 2em;
+}
+
+.nuestrosServicios {
+  margin: 2em;
 }
 
 /*CARD INDEX*/
@@ -480,6 +453,16 @@ header {
   color: #03090e;
 }
 
+/*CONTACTO*/
+.tituloContacto {
+  margin: 1em;
+}
+
+.boton {
+  width: auto;
+  margin: 1.5em;
+}
+
 /*ABONOS*/
 .abonos {
   height: 150px;
@@ -489,8 +472,7 @@ header {
 }
 
 .abonosTexto {
-  width: 400px;
-  text-align: center;
+  width: auto;
 }
 
 /*WHATSAPP*/
@@ -621,21 +603,17 @@ ul {
   }
 }
 /*PAGINA SERVICIOS*/
-.contenedorServicios h1 {
-  text-align: center;
+.servicios h1 {
   padding-top: 1em;
   padding-bottom: 0.8em;
-  font-weight: bold;
 }
 
-.contenedorServicios p {
-  text-align: center;
+.servicios p {
   padding: 0 8em 0 9em;
   line-height: 22px;
 }
 
-.contenedorServicios h2 {
-  text-align: center;
+.servicios h2 {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
