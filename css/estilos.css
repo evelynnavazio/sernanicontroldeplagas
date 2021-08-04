@@ -51,6 +51,12 @@
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
+/*ICONOS INDEX*/
+.iconCheck {
+  width: 2rem;
+  height: 2rem;
+}
+
 /*IMAGEN ANTES DEL FOOTER INDEX*/
 .boxImg {
   display: -webkit-box;
@@ -287,40 +293,58 @@
 }
 
 /* Underline From Center */
-/*
 .principalBtn {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	width: 100%;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
 
-  .principalBtn:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	right: 50%;
-	bottom: 0;
-	background: #27ae60;
-	height: 3px;
-	-webkit-transition-property: left, right;
-	transition-property: left, right;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-  }
-  .principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
-	left: 0;
-	right: 0;
-  }
-*/
+.principalBtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #27ae60;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.principalBtn:hover:before, .principalBtn:focus:before, .principalBtn:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*ABONOS*/
+.abonos {
+  width: 100%;
+  height: 240px;
+  background: no-repeat center center url("../media/person-in-white-chemical-protection-suit-doing-disinfection-of-public-areas-to-stop-spreading-highly-contagious-corona-virus.jpg");
+  background-size: cover;
+}
+
+.sombra {
+  background-color: rgba(184, 179, 179, 0.4);
+}
+
+.barra {
+  background: #1d3557ff;
+  height: 60px;
+}
+
 /* GENERALES */
 * {
   margin: 0px;
@@ -366,13 +390,18 @@ header {
   width: 200px;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem !important;
+}
+
+/*DATOS DE CONTACTO*/
+.contacto {
+  font-weight: bold;
+}
+
 /*CAROUSEL*/
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-.imgC {
-  width: 100%;
 }
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
@@ -393,9 +422,6 @@ header {
 }
 /*CARD INDEX*/
 .containerCar {
-  width: 100%;
-  max-width: 1200px;
-  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,14 +434,10 @@ header {
 }
 
 .containerCar .card {
-  width: 330px;
-  height: 380px;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
-  text-align: center;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -425,27 +447,6 @@ header {
           transform: translateY(-15px);
   -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
           box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.containerCar .card img {
-  width: 330px;
-  height: 220px;
-}
-
-.containerCar .card h4 {
-  font-weight: 600;
-}
-
-.containerCar .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.containerCar .card a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #03090e;
 }
 
 /*CONTACTO*/
@@ -575,7 +576,8 @@ ul {
   margin-top: 30px;
   margin-bottom: 15px;
   width: 100%;
-  color: white;
+  color: #bbbbbb;
+  font-size: 15px;
 }
 
 /*responsive*/
@@ -594,18 +596,33 @@ ul {
 }
 /*PAGINA SERVICIOS*/
 .servicios h1 {
+  color: honeydew;
   padding-top: 1em;
-  padding-bottom: 0.8em;
+  padding-bottom: 2em;
+  background-color: #075a9e;
+  height: auto;
+  width: 100%;
 }
 
 .servicios p {
-  padding: 0 8em 0 9em;
-  line-height: 22px;
+  margin: auto;
+  padding: 1em;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
 }
 
 .servicios h2 {
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #075a9e;
+  height: 60px;
+  color: honeydew;
+  margin: 1em;
 }
 
 .container .card:hover {
@@ -634,4 +651,71 @@ ul {
     height: auto;
     text-align: center;
   }
+}
+.footerServ {
+  background-color: #075a9e;
+  height: 90px;
+}
+
+/*PARA MIXIN*/
+.linea {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.linea::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: -10px;
+  background-color: #27ae60;
+  height: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+}
+
+.barra {
+  color: honeydew;
+  background-color: #075a9e;
+  height: auto;
+}
+
+.sombra {
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.abonosH {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.abonosH:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.color {
+  color: whitesmoke;
+}
+
+.color:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.carter-card-container {
+  padding-left: 12.5%;
 }/*# sourceMappingURL=estilos.css.map */

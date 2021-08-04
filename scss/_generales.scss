@@ -35,16 +35,19 @@ header {
 .logo{
 	width: 200px;
 }
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding-right: 1.5rem!important;
+}
+
+/*DATOS DE CONTACTO*/
+.contacto{
+	font-weight: bold;
+}
 
 /*CAROUSEL*/
 .carousel-caption{
 	background-color: rgba(0, 0, 0, 0.4);
 }
-.imgC{
-	width: 100%;
-}
-
-
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
 .certified{
@@ -63,58 +66,28 @@ header {
   }
 
 
+/*CARD INDEX*/ 
 
-
-
-/*CARD INDEX*/
-
-.containerCar{
-    width: 100%;
-    max-width: 1200px;
-	padding: 10px 20px;
+  .containerCar{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
 }
-
 .containerCar .card{
-    width: 330px;
-    height: 380px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
-    text-align: center;
     transition: all 0.25s;
 }
-
 .containerCar .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.containerCar .card img{
-    width: 330px;
-    height: 220px;
-}
 
 
-.containerCar .card h4{
-    font-weight: 600;
-}
 
-.containerCar .card p{
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.containerCar .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #03090e;
-}
 /*CONTACTO*/
 .tituloContacto{
 	margin: 1em;
@@ -126,9 +99,6 @@ header {
 
 
 
-
-
-
 /*WHATSAPP*/
 .icono {
 	margin: 0 0;
@@ -137,7 +107,7 @@ header {
 	width: 55px;
 	height: 55px;
 	line-height: 55px;
-	bottom: 30px;
+	bottom: 100px;
 	right: 30px;
 	background: #0df053;
 	color: #fff;
@@ -176,6 +146,7 @@ ul{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -231,10 +202,10 @@ ul{
 	margin-top: 30px;
     margin-bottom: 15px;
 	width: 100%;
-	color: white;
+	color: #bbbbbb;
+	font-size: 15px;
 }
 
-/*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -252,18 +223,29 @@ ul{
 
 /*PAGINA SERVICIOS*/
 .servicios h1{
-	padding-top: 1em;
-	padding-bottom: 0.8em;
+	color: honeydew;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #075a9e;
+    height: auto;
+	width: 100%;
 }
 
 .servicios p{
-	padding: 0 8em 0 9em;
-	line-height: 22px;
+	margin: auto;
+	padding: 1em;
+	line-height: 25px;
+	width: 100%;
+	text-align: center;
 }
 
 .servicios h2{
-	margin-bottom: 1.5em;
-	margin-top: 1.5em;
+	align-items:center;
+	justify-content: center;
+	background-color: #075a9e;
+    height: 60px;
+	color: honeydew;
+	margin: 1em;
 }
 
 .container .card:hover{
@@ -289,4 +271,58 @@ ul{
 		height: auto;
 		text-align: center;
 }
+}
+.footerServ{
+	background-color:#075a9e;
+	height: 90px;
+}
+
+/*PARA MIXIN*/
+.linea{
+	margin-bottom: 35px;
+	position: relative;
+}
+.linea::before{
+	content: '';
+	position: absolute;
+	left: calc(50% - 25px);
+	bottom: -10px;
+	background-color: #27ae60;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.barra{
+	color: honeydew;
+    background-color: #075a9e;
+    height: auto;
+}
+.sombra{
+	box-shadow: 0px 15px 25px rgb(0 0 0 / 30%);
+}
+
+.abonosH{
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.abonosH:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.color{
+	color: whitesmoke;
+}
+.color:hover{
+	color: whitesmoke;
+	text-decoration: none;
+}
+.icon{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.carter-card-container{
+	padding-left: 12.5%;
 }
