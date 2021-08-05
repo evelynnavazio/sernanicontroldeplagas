@@ -126,7 +126,7 @@
 }
 
 /*FORMULARIO DE CONTACTO*/
-.container {
+.containerCar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +144,7 @@
   margin: 0;
 }
 
-.container::after {
+.containerCar::after {
   content: "";
   position: absolute;
   left: 0;
