@@ -100,7 +100,7 @@
 	background-color: #2ecc71;
 }
 /*FORMULARIO DE CONTACTO*/
-.containerCar{
+.containerCar2{
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -111,7 +111,7 @@
     background-attachment: fixed;
     margin: 0;
 }
-.containerCar::after{
+.containerCar2::after{
 	content:'';
 	position: absolute;
 	left: 0;
@@ -121,7 +121,7 @@
 	background:no-repeat center url("../media/6.jpg");
 	background-size: cover;
 	z-index: -1;
-	filter: blur(50px);
+	
 }
 .contentContacto{
 	max-width: 1200px;

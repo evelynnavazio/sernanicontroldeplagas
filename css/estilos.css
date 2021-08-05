@@ -126,7 +126,7 @@
 }
 
 /*FORMULARIO DE CONTACTO*/
-.containerCar {
+.containerCar2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +144,7 @@
   margin: 0;
 }
 
-.containerCar::after {
+.containerCar2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -154,8 +154,6 @@
   background: no-repeat center url("../media/6.jpg");
   background-size: cover;
   z-index: -1;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
 }
 
 .contentContacto {
