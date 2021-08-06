@@ -176,13 +176,15 @@
 }
 
 .left {
+  width: 50%;
+  background: no-repeat url(../media/23.jpg);
   height: 100%;
-  background: no-repeat center url("../media/23.jpg");
   background-size: cover;
 }
 
 .right {
-  padding: 25px 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .tituloContacto {
@@ -433,10 +435,6 @@ header {
 }
 
 /*FOOTER*/
-.containerCar2 {
-  margin: 20px 20px;
-}
-
 .containerFooter {
   max-width: 1170px;
   margin: auto;
@@ -573,7 +571,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #075a9e;
-  height: 60px;
   color: honeydew;
   margin: 1em;
 }
@@ -607,7 +604,6 @@ ul {
 }
 .footerServ {
   background-color: #075a9e;
-  height: 70px;
 }
 
 .linea {

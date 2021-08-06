@@ -54,21 +54,46 @@
 
 <!-- FORMULARIO -->
 <div class="containerCar2">
-  <div class="contentContacto">
-    <div class="left"></div>
+  <div class="contentContacto d-none d-sm-table">
+    <table>
+      <tbody>
+        <tr>
+          <td class="left"></td>
+            <td>
+              <div class="right">
+                <form>
+                  <h2 class="tituloContacto">CONTACTO</h2>
+                  <input class="field" type="text" name="Nombre" placeholder="Nombre">
+                  <input class="field" type="text" name="Correo" placeholder="Correo">
+                  <input class="field" type="text" name="Tel" placeholder="Tel">
+                  <textarea class="field area" name="mensaje" placeholder="Hola, quiero presupuestar un servicio de fumigación.."></textarea>
+                  <input class="form-check-input mb-3" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label mb-3" for="inlineCheckbox1">Quiero que me envien promociones y noticias !</label>
+                  <input type="button" value="ENVIAR" class="btnContacto">
+                  <div class="form-check form-check-inline">
+                  </div>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- FORMULARIO MOBILE -->
+  <div class="contentContacto d-block d-sm-none">
     <div class="right">
-    <form>
-        <h2 class="tituloContacto">CONTACTO</h2>
-        <input class="field" type="text" name="Nombre" placeholder="Nombre">
-        <input class="field" type="text" name="Correo" placeholder="Correo">
-        <input class="field" type="text" name="Tel" placeholder="Tel">
-        <textarea class="field area" name="mensaje" placeholder="Hola, quiero presupuestar un servicio de fumigación.."></textarea>
-        <input class="form-check-input mb-3" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label mb-3" for="inlineCheckbox1">Quiero que me envien promociones y noticias !</label>
-        <input type="button" value="ENVIAR" class="btnContacto">
-        <div class="form-check form-check-inline">
-        </div>
-    </form>
+      <form>
+          <h2 class="tituloContacto">CONTACTO</h2>
+          <input class="field" type="text" name="Nombre" placeholder="Nombre">
+          <input class="field" type="text" name="Correo" placeholder="Correo">
+          <input class="field" type="text" name="Tel" placeholder="Tel">
+          <textarea class="field area" name="mensaje" placeholder="Hola, quiero presupuestar un servicio de fumigación.."></textarea>
+          <input class="form-check-input mb-3" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label mb-3" for="inlineCheckbox1">Quiero que me envien promociones y noticias !</label>
+          <input type="button" value="ENVIAR" class="btnContacto">
+          <div class="form-check form-check-inline">
+          </div>
+      </form>
     </div>
   </div>
 </div>

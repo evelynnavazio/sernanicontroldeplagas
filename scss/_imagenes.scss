@@ -135,13 +135,15 @@
 	border-radius: 0.55rem;
 }
 .left{
-	height: 100%;
-	background:no-repeat center url("../media/23.jpg");
+    width: 50%;
+    background: no-repeat url(../media/23.jpg);
+    height: 100%;
 	background-size: cover;
 }
 
 .right{
-	padding: 25px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .tituloContacto {
 	position: relative;
