@@ -241,13 +241,13 @@ ul{
 	margin: 1em;
 }
 
-.container .card:hover{
+.card-group .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-body{
-	height: 200px;
+	height: auto;
 }
 
 .card-img-top{
