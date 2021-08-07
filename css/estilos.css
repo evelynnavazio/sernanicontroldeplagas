@@ -299,7 +299,6 @@
 
 .barra {
   background: #1d3557ff;
-  height: 60px;
 }
 
 /* GENERALES */
@@ -363,13 +362,8 @@ header {
 
 /*SOBRE NUESTRA EMPRESA EN EL INDEX*/
 .certified {
-  width: 150px;
+  width: 130px;
   margin: 2em 2em;
-}
-
-.nosotrosDescripcion {
-  margin: auto;
-  width: 800px;
 }
 
 @media (max-width: 900px) {
@@ -456,7 +450,7 @@ ul {
 
 .footer {
   background-color: #1d3557ff;
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .footer-col {
@@ -527,7 +521,6 @@ ul {
 
 .firma {
   margin-top: 30px;
-  margin-bottom: 15px;
   width: 100%;
   color: #bbbbbb;
   font-size: 15px;
