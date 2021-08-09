@@ -4,7 +4,10 @@
 	padding: 0px;
     box-sizing: border-box;
 }
-body{
+html {
+	overflow-x: hidden;
+}
+body {
 	font-family: $fuentes;
 	background-color: $fondo;
 	color: black;
