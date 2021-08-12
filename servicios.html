@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Sernani Control de plagas. Brindamos servicios de fumigación económicos y ecológicos.">
     <meta name="keywords"  content="plagas, fumigacion, economico, barato, ratas, cucarachas, desinfeccion, covid, dengue, contacto">
+    <link rel="shortcut icon" href="media/sernani_icono.png"/>
     <!-- WOW ANIMATION -->
     <link
     rel="stylesheet"
@@ -15,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="grid/flexboxgrid.min.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <title>Servicios</title>
+    <title>Servicios | Sernani Control de plagas</title>
   </head>
 <body>
 <!--HEADER-->
@@ -29,7 +30,7 @@
       <div class="collapse navbar-collapse logo" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item principalBtn">
-          <a class="nav-link " href="index.html">Home<span class="sr-only"></span></a>
+          <a class="nav-link " href="index.html">Inicio<span class="sr-only"></span></a>
           </li>
           <li class="nav-item principalBtn">
           <a class="nav-link" href="nuestraempresa.html">Empresa</a>
@@ -50,23 +51,23 @@
 </div>
 
 
-<div class="servicios wow animate__ animate__slideInRight animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s">
-	<h1>Consultanos sobre nuestros servicios</h1>
+<div class="servicios">
+	<h1 class="wow animate__ animate__slideInRight animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s">Consultanos sobre nuestros servicios</h1>
 	<div>
-		<p>Controlamos todo tipo de plagas basándonos en el M.I.P (manejo integrado de plagas).
+		<p class="wow animate__ animate__slideInLeft animated animate__delay-2s" data-wow-duration="1s" data-wow-duration="0.5s">Controlamos todo tipo de plagas basándonos en el M.I.P (manejo integrado de plagas).
 		Esta estrategia usa una gran variedad de métodos complementarios: físicos, mecánicos, químicos, biológicos, genéticos, legales y culturales para el control de plagas.</p>
 	</div>
-	<h2 class="py-4">¿Qué tipo de servicio necesitas?</h2>
+	<h2 class="py-4 wow animate__ animate__slideInRight animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s">¿Qué tipo de servicio necesitas?</h2>
 </div>
 
 
 <!--CARD SERVICIOS-->
 
-<div class="card-group mx-4">
+<div class="card-group mx-4" >
 	<div class="row row-cols-1 row-cols-md-3">
 		<div class="col mb-4">
-		  <div class="card">
-			<img src="media/17.jpg" class="card-img-top" alt="Control de insectos cucarachas">
+		  <div class="card ">
+			<img src="media/17.jpg" class="card-img-top" alt="Control de insectos cucarachas" id="cuca">
 			<div class="card-body">
 				<h5 class="card-title">Control de insectos</h5>
 				<p class="card-text">Eliminamos todos los insectos.</p>
@@ -78,7 +79,7 @@
 
 		<div class="col mb-5 ">
 			<div class="card">
-			  <img src="media/18.jpg" class="card-img-top " alt="termitas carcoma bicho taladro">
+			  <img src="media/18.jpg" class="card-img-top " alt="termitas carcoma bicho taladro" id="termitas">
 			    <div class="card-body">
           <h5 class="card-title">Control de termitas</h5>
           <p class="card-text">Las termitas atraviesan cualquier cosa para llegar hasta la madera, incluso el hormigón.No permitas que este tipo de plagas deterioren tu estructrura edilicia.
@@ -88,7 +89,7 @@
 		</div>
 		<div class="col mb-4 ">
 			<div class="card">
-			  <img src="media/19.jpg" class="card-img-top" alt="murcielagos">
+			  <img src="media/19.jpg" class="card-img-top" alt="murcielagos" id="murci">
           <div class="card-body">
           <h5 class="card-title">Control de murciélagos</h5>
           <p class="card-text">Tienen la capacidad de trasmitir enfermedades por mordeduras, como la rabia. Prevenilas con este servicio y cuidá a tu familia y mascotas.</p>
@@ -97,7 +98,7 @@
 		</div>
 		<div class="col mb-4">
 		  <div class="card">
-			  <img src="media/20.jpg" class="card-img-top" alt="telas de araña">
+			  <img src="media/20.jpg" class="card-img-top" alt="telas de araña" id="araña">
 			    <div class="card-body">
 			    <h5 class="card-title">Control de telas de araña</h5>
 			    <p class="card-text">Evita el acumulamiento de telas de araña y las potenciales picaduras. Nosotros llegamos a donde nadie más llega.</p>
@@ -106,7 +107,7 @@
 	  </div>
 		<div class="col mb-4">
 			<div class="card">
-				<img src="media/21.jpg" class="card-img-top" alt="virus bacterias y hongos">
+				<img src="media/21.jpg" class="card-img-top" alt="virus bacterias y hongos" id="desi">
 				  <div class="card-body">
 					  <h5 class="card-title">Desinfección ambiental</h5>
 					  <p class="card-text">Servicio contra virus, bacterias y hongos. Nos encargamos de realizar desinfectación para que puedas trabajar y vivir tranquilo.</p>
@@ -114,7 +115,7 @@
 			</div>
 		</div>
 		<div class="col mb-4">
-			<div class="card ">
+			<div class="card" id="rata">
 					<img src="media/22.jpg" class="card-img-top" alt="ratas roedores ratones">
 					  <div class="card-body">
               <h5 class="card-title">Control de roedores</h5>
@@ -126,8 +127,8 @@
     </div>
   </div>
 
-<div class="footerServ py-3 px-2 wow animate__ animate__slideInLeft animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s">
-	<p class="color">¿No encontras lo que necesitas? Consultanos, quizás podamos ayudarte ;)</p><a class="color"  href="contacto.html">Contactar</a>
+<div class="footerServ py-3 px-2">
+	<p class="color wow animate__ animate__slideInLeft animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s">¿No encontras lo que necesitas? Consultanos, quizás podamos ayudarte ;)</p><a class="button wow animate__ animate__slideInRight animated animate__delay-2s" data-wow-duration="0.9s" data-wow-duration="0.5s"  href="contacto.html">Contactar</a>
 </div>
 
 
