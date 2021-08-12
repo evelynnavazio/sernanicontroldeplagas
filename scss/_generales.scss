@@ -233,6 +233,7 @@ ul{
 
 .servicios p{
 	margin: auto;
+	font-weight: bold;
 	padding: 1em;
 	line-height: 25px;
 	width: 100%;
@@ -266,7 +267,7 @@ ul{
 	  text-align: center;
 }
 }
-  @media(max-width: 767px){
+@media(max-width: 767px){
 	.card-body{
 		height: auto;
 		text-align: center;
@@ -355,3 +356,4 @@ ul{
 .button:hover {
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 	}
+

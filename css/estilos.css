@@ -560,6 +560,7 @@ ul {
 
 .servicios p {
   margin: auto;
+  font-weight: bold;
   padding: 1em;
   line-height: 25px;
   width: 100%;
