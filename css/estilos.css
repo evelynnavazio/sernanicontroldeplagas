@@ -126,43 +126,43 @@
   background-color: #2ecc71;
 }
 
-/*FORMULARIO DE CONTACTO*/
-.containerCar2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/*EN PAGINA DE CONTACTO*/
+.bannerContact {
+  background-color: #075a9e;
+  color: #fff;
   width: 100%;
-  height: 100%;
-  background-size: 100vh 100vh;
-  background-attachment: fixed;
-  margin: 0;
+  height: 25vh;
 }
 
-.containerCar2::after {
+.bgContact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 4em;
+  background-size: 100vh 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bgContact::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center url("../media/26.jpg");
   background-size: cover;
   z-index: -1;
   -webkit-filter: blur(50px);
           filter: blur(50px);
+  background: no-repeat center center url("../media/26.jpg");
 }
 
-.contentContacto {
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.contentContact {
+  padding: 1em 2em 2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -173,38 +173,11 @@
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
           box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-  border-radius: 0.55rem;
+  border-radius: 0.55rem 0.55rem 0.55rem 0.55rem;
 }
 
-.left {
-  width: 50%;
-  background: no-repeat url(../media/23.jpg);
-  height: 100%;
-  background-size: cover;
-}
-
-.right {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.tituloContacto {
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.tituloContacto::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: #2ecc71;
+.area {
+  min-height: 10em;
 }
 
 .field {
@@ -228,27 +201,28 @@
   border: 2px solid rgba(30, 85, 250, 0.47);
 }
 
-.area {
-  min-height: 150px;
-}
-
-.btnContacto {
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 1.1rem;
-  background-color: #1d3557ff;
-  cursor: pointer;
-  outline: none;
-  border: none;
+.footContact {
+  background-color: #075a9e;
+  height: auto;
   color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
-.btnContacto:hover {
-  background-color: #27ae60;
-}
+@media (max-width: 576px) {
+  .bannerContact h1, h2 {
+    text-align: start;
+    font-size: 25px;
+  }
 
+  .responsiveC div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /* Underline From Center */
 .principalBtn {
   display: inline-block;
@@ -526,7 +500,6 @@ ul {
 }
 
 .firma {
-  margin-top: 30px;
   width: 100%;
   color: #bbbbbb;
   font-size: 15px;

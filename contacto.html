@@ -20,6 +20,7 @@
   </head>
 <body>
 <!--HEADER-->
+<header>
 <div class="siteNav bg-black">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-black p-0">
@@ -49,21 +50,44 @@
     </nav> 
   </div>
 </div>
- 
+</header>
 
-<h1 class="tituloContacto">Recibimos tus consultas, escribinos, es gratis !</h1>
 
-<!-- FORMULARIO -->
-<div class="containerCar2">
-  <div class="contentContacto d-none d-sm-table">
-    <table>
-      <tbody>
-        <tr>
-          <td class="left"></td>
-            <td>
-              <div class="right">
+
+<div class="bannerContact d-flex flex-column align-items-center justify-content-center ">
+  <h1>Servicios de fumigación</h1>
+  <h2>Solicitá tu presupuesto!</h2>
+</div>
+    <div class="container bgContact pb-5">
+      <div class="row  justify-content-center"> 
+          <div class="col-xl-6 contentContact">
+          <form>
+            <h3 class="my-4">CONTACTO</h3>
+              <input class="field" type="text" name="Nombre" placeholder="Nombre">
+              <input class="field" type="text" name="Correo" placeholder="Correo">
+              <input class="field" type="text" name="Tel" placeholder="Tel">
+              <textarea class="field area" name="mensaje" placeholder="Hola, quiero presupuestar un servicio de fumigación.."></textarea>
+              <input class="form-check-input mb-3" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label mb-3" for="inlineCheckbox1">Acepto que me envien promociones y noticias!</label>
+              <div class="form-check form-check-inline"></div>
+            <input type="button" value="ENVIAR" class="button color">
+          </form>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- FORMULARIO 
+<div class="container d-flex justify-content-center  align-items-center bgContact">
+  <div class="row d-flex justify-content-center  align-items-center contentContact">
+              <div class="col-xl-6 left">
+
+              </div>
+            
+              <div class="col-xl-6 right">
                 <form>
-                  <h2 class="tituloContacto">CONTACTO</h2>
+                  <h2 class="titleContact">CONTACTO</h2>
                   <input class="field" type="text" name="Nombre" placeholder="Nombre">
                   <input class="field" type="text" name="Correo" placeholder="Correo">
                   <input class="field" type="text" name="Tel" placeholder="Tel">
@@ -74,16 +98,16 @@
                   <input type="button" value="ENVIAR" class="button color">
               </form>
             </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <!-- FORMULARIO MOBILE -->
-  <div class="contentContacto d-block d-sm-none">
+          </div>
+      </div>
+      -->
+
+
+  <!-- FORMULARIO MOBILE 
+  <div class="contentContact d-block d-sm-none">
     <div class="right">
       <form>
-          <h2 class="tituloContacto">CONTACTO</h2>
+          <h2 class="titleContact">CONTACTO</h2>
           <input class="field" type="text" name="Nombre" placeholder="Nombre">
           <input class="field" type="text" name="Correo" placeholder="Correo">
           <input class="field" type="text" name="Tel" placeholder="Tel">
@@ -96,11 +120,31 @@
     </div>
   </div>
 </div>
+-->
 
-<div class="container my-5">
-  <a href="mailto:antoniosernani@hotmail.com" target="blank_"><img class="icon" src="media/envelope.svg" alt="email"></a>
-  <a  class="color" href="https://api.whatsapp.com/send?phone=+5491140928609&text=Hola" target="blank_"><img class="icon mx-3" src="media/whatsapp.svg" alt="whatsapp"></a>
-  <a href="tel:+5491140928609" target="_blank"><img class="icon" src="media/telephone-forward-fill.svg" alt="telefono de contacto"></a>
+<!-- Información antes del footer-->
+
+<div class="container-fluid footContact pt-2 pb-1">
+  <div class="responsiveC d-flex flex-row justify-content-center align-items-center">
+    <div class="">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.1460847697713!2d-58.47514788502163!3d-34.52452666081886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6ad482c7f79%3A0x9011a7a75cfd3b24!2sVicente%20L%C3%B3pez!5e0!3m2!1ses-419!2sar!4v1629300391265!5m2!1ses-419!2sar" width="280" height="150" style="border:0;" allowfullscreen="Video no compatible" loading="lazy">
+      </iframe>
+    </div>
+    <div>
+      <ul class="text-justify mx-5">
+        <li>Nos encontramos en Vicente López</li>
+        <li>Trabajamos en Zona Norte y Capital Federal</li>
+        <li>No sabes si llegamos a tu barrio ? Escribinos</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="text-justify">
+        <li>Email:sernaniantonio@hotmail.com</li>
+        <li>Whatsapp, respuesta inmediata</li>
+        <li>Llamados al 1140928609</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
